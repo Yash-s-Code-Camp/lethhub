@@ -60,7 +60,7 @@
 		$query = mysqli_query($conn, $sql_update);
 		if($query){
 			// echo "<script>alert('Profile Updated...');</script>";
-			header("location:https://lethhub-2.herokuapp.com/students/profile.php");
+			header("location:http://localhost/lethhub/students/profile.php");
 
 		}else{
 			echo "Err... ".mysqli_error($conn);

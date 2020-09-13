@@ -1,6 +1,6 @@
 <?php 
   include('header.php'); 
-  $root_url = "https://lethhub-2.herokuapp.com/students/"; 
+  $root_url = "http://localhost/lethhub/students/"; 
 ?>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">

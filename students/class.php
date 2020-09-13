@@ -30,7 +30,7 @@
                                 <h4 class=\"card-title\">".$rs["title"]."</h4>
                                 <h6 class=\"card-subtitle mb-2 text-muted\">".$rs["created_on"]."</h6>
                                 <p class=\"card-text\">".$rs["msg"]."</p>
-                                <a href=\"https://lethhub-2.herokuapp.com/teachers/uploads/".$rs["attachment"]."\" class=\"card-link\">".$rs["attachment"]."</a>
+                                <a href=\"http://localhost/lethhub/teachers/uploads/".$rs["attachment"]."\" class=\"card-link\">".$rs["attachment"]."</a>
                             </div>
                         </div>";
                 }

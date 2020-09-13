@@ -2,7 +2,7 @@
     $title = "Dashboard";
     include('includes/top.php'); 
     if(!isset($_SESSION["current_student"]) ){
-        header('location:https://lethhub-2.herokuapp.com/login.php');
+        header('location:http://localhost/lethhub/login.php');
     }
     $current_student = $_SESSION['current_student'];
     $sql_student = "SELECT * FROM students WHERE `email`='$current_student'";

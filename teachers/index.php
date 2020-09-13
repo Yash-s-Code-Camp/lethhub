@@ -2,7 +2,7 @@
     $title = "Dashboard";
     include('includes/top.php'); 
     if(!isset($_SESSION["current_teacher"]) ){
-        header('location:https://lethhub-2.herokuapp.com/login.php');
+        header('location:http://localhost/lethhub/login.php');
     }
     $current_teacher = $_SESSION['current_teacher'];
     $sql_teacher = "SELECT * FROM teachers WHERE `email`='$current_teacher'";
@@ -68,7 +68,7 @@
                 echo  "<tr>
                 <td>".$row["class_name"]."</td>
                 <td>".$row['class_code']."</td>
-                <td><a class=\"btn btn-success float-md-right\" href=\"https://lethhub-2.herokuapp.com/teachers/class.php?id=".$row["id"]."\">Manage</a></td>
+                <td><a class=\"btn btn-success float-md-right\" href=\"http://localhost/lethhub/teachers/class.php?id=".$row["id"]."\">Manage</a></td>
                 </tr>";
             }
         } else {

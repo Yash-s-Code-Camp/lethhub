@@ -51,7 +51,7 @@ $mail = new PHPMailer(true);
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = $sub;
-    $mail->Body    = "Check your dashboard...<a href=\"https://lethhub-2.herokuapp.com/login.php\">LethHub Dashboard</a>";
+    $mail->Body    = "Check your dashboard...<a href=\"http://localhost/lethhub/login.php\">LethHub Dashboard</a>";
 
    if(!$mail->send()) 
     {
@@ -143,12 +143,12 @@ $mail = new PHPMailer(true);
                         
                             <tr>
                                 <td>".$a["title"]."</td><td>".$a["msg"]."</td>
-                                <td><a href=\"https://lethhub-2.herokuapp.com/teachers/uploads/".$a["attachment"]."\">
+                                <td><a href=\"http://localhost/lethhub/teachers/uploads/".$a["attachment"]."\">
                                     ".$a["attachment"]."
                                     </a>
                                 </td>
                                 <td>
-                                    <a class=\"float-sm btn btn-sm btn-danger\" href=\"https://lethhub-2.herokuapp.com/teachers/delete_ann.php/?id=".$a["id"]."\">X</a>
+                                    <a class=\"float-sm btn btn-sm btn-danger\" href=\"http://localhost/lethhub/teachers/delete_ann.php/?id=".$a["id"]."\">X</a>
                                 </td>
                             </tr>
                         
@@ -179,7 +179,7 @@ $mail = new PHPMailer(true);
                 $target_dir = "uploads/";
                 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
                 $filename = basename( $_FILES["fileToUpload"]["name"]);
-                $uploadOk = 1;
+                $uploadOk = 1; //falg
                 $fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
                 echo $fileType;

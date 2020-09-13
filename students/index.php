@@ -7,7 +7,7 @@
 <?php
     //include('includes/top.php');
     if(!isset($_SESSION["current_student"]) ){
-        header('location:https://lethhub-2.herokuapp.com/login.php');
+        header('location:http://localhost/lethhub/login.php');
     }
     $current_student = $_SESSION['current_student'];
     $sql_student = "SELECT * FROM students WHERE `email`='$current_student'";
@@ -68,7 +68,7 @@
     if (mysqli_num_rows($result_c) > 0) {
             // output data of each row
         while($row = mysqli_fetch_assoc($result_c)) {
-            echo  "<tr><td><a href=\"https://lethhub-2.herokuapp.com/students/class.php/?code=".$row["class_code"]."\">Go</a></td><td>".$row["class_name"]."</td><td>".$row['class_code']."</td></tr>";
+            echo  "<tr><td><a href=\"http://localhost/lethhub/students/class.php/?code=".$row["class_code"]."\">Go</a></td><td>".$row["class_name"]."</td><td>".$row['class_code']."</td></tr>";
         }
     } else {
         echo "0 results";

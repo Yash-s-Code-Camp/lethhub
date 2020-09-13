@@ -1,13 +1,13 @@
 <?php session_start(); ?>
 <?php include('header.php'); ?>
-<?php $root_url = "https://lethhub-2.herokuapp.com/studs/"?>
+<?php $root_url = "http://localhost/lethhub/studs/"?>
 
 <?php
     // if(isset($_SESSION["current_teacher"]) ){
-    //     header('location:https://lethhub-2.herokuapp.com/teachers');
+    //     header('location:http://localhost/lethhub/teachers');
     // }
     // if(isset($_SESSION["current_student"])){
-    //     header('location:https://lethhub-2.herokuapp.com/students');
+    //     header('location:http://localhost/lethhub/students');
     // }
 ?>
 
